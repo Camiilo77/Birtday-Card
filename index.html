@@ -2,28 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¡Feliz Cumpleaños!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Cumpleaños 🎉</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <div class="gift-box">
-      <img src="https://i.imgur.com/Bn9ZYKQ.png" alt="Regalo animado" />
+  <div class="card" id="card">
+    <div class="gift-box" id="giftBox">
+      <img src="imagenes/icon.png" alt="Regalo animado" id="giftImage"/>
     </div>
-    <h1>HAPPY <span>BIRTHDAY</span></h1>
-    <p class="message">
-      Para el amor de mi vida,<br />
-      Cuanto más tiempo estoy contigo, más te amo.<br />
-      Esta tarjeta es una muestra de todo lo que siento.<br />
-      ¡Feliz cumpleaños! 💖
-    </p>
-    <button id="celebrateBtn">Haz clic para celebrar 🎉</button>
+    <div class="message hidden" id="message">
+      <h1>🎉 ¡Feliz cumpleaños!</h1>
+      <p>
+        Hoy celebramos tus 30 años de vida, y no puedo estar más orgulloso<br>
+        de todo lo que has logrado y en la gran persona que eres.<br>
+        Gracias por estar siempre, por reír, por escuchar, por ser tú.<br>
+        Que este nuevo año venga lleno de aventuras, sueños cumplidos, exitos <br>
+        y muchos momentos felices.<br>
+        ¡Te lo mereces todo y más! 💖
+
+        <br>
+        <br>
+         <br>
+        <strong>Besos y abrazos ✨ </strong>
+        <br>
+        <br>
+      </p>
+    </div>
     <canvas id="confetti"></canvas>
   </div>
-
-  <!-- Contenedor de imágenes flotantes -->
-  <div id="floatingImages"></div>
 
   <script src="script.js"></script>
 </body>
