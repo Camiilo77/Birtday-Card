@@ -1,0 +1,116 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #fff9f1, #fce3e0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #ffffffcc;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.gift-box img {
+  width: 100px;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+h1 {
+  color: #d14b8f;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  display: block;
+  font-size: 1.8rem;
+  color: #3d1e6d;
+}
+
+.message {
+  background: #fff6f9;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: #ff85a2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e46891;
+}
+
+canvas#confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.image-container {
+  margin-top: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-height: 300px;
+  object-fit: contain;
+}
+#floatingImages {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.floating-img {
+  position: absolute;
+  width: 100px;
+  animation: bounce 5s infinite;
+  will-change: transform;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0px) rotate(0deg); }
+  25%  { transform: translateY(-40px) rotate(5deg); }
+  50%  { transform: translateY(0px) rotate(-5deg); }
+  75%  { transform: translateY(-20px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
