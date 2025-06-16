@@ -27,9 +27,9 @@ function launchFloatingPhotos() {
     "imagenes/foto2.jpg",
     "imagenes/foto3.jpg",
     "imagenes/foto4.jpg",
-    "imagenes/foto5.jpg",
-    "imagenes/foto6.jpg",
-    "imagenes/foto7.jpg",
+    "imagenes/foto5.png",
+    "imagenes/foto6.png",
+    "imagenes/foto7.png",
     "imagenes/foto8.png"
   ];
 
