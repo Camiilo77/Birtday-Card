@@ -27,27 +27,29 @@ function launchFloatingPhotos() {
     "imagenes/foto2.jpg",
     "imagenes/foto3.jpg",
     "imagenes/foto4.jpg",
-    "imagenes/foto5.png",
-    "imagenes/foto6.png",
-    "imagenes/foto7.png",
+    "imagenes/foto5.jpg",
+    "imagenes/foto6.jpg",
+    "imagenes/foto7.jpg",
     "imagenes/foto8.png"
   ];
+
+  const container = document.getElementById("photo-container");
 
   setInterval(() => {
     const img = document.createElement("img");
     img.src = images[Math.floor(Math.random() * images.length)];
     img.className = "floating-img";
-    img.style.top = `${Math.random() * 80 + 10}%`;
-    img.style.left = `${Math.random() * 80 + 10}%`;
+    img.style.top = `${Math.random() * 90}%`;
+    img.style.left = `${Math.random() * 90}%`;
     img.style.transform = `rotate(${Math.random() * 360}deg)`;
-    document.body.appendChild(img);
+    container.appendChild(img);
 
-    // Eliminar la imagen tras 10 segundos
     setTimeout(() => {
       img.remove();
     }, 10000);
   }, 1000);
 }
+
 
 // 🎊 Simple confeti canvas
 function startConfetti() {
