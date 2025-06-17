@@ -56,7 +56,7 @@ function launchFloatingPhotos() {
 
     setTimeout(() => {
       img.remove();
-    }, 10000);
+    }, 20000);
   }, 2000);
 }
 
