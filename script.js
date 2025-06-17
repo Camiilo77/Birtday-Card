@@ -18,7 +18,7 @@ giftImage.addEventListener("click", () => {
   // Después de 5 segundos, empezar a mostrar fotos flotantes
   setTimeout(() => {
     launchFloatingPhotos();
-  }, 5000);
+  }, 10000);
 });
 
 function launchFloatingPhotos() {
@@ -30,7 +30,17 @@ function launchFloatingPhotos() {
     "imagenes/foto5.png",
     "imagenes/foto6.png",
     "imagenes/foto7.png",
-    "imagenes/foto8.png"
+    "imagenes/foto8.png",
+    "imagenes/foto9.jpg",
+    "imagenes/foto10.jpg",
+    "imagenes/foto11.jpg",
+    "imagenes/foto12.jpg",
+    "imagenes/foto13.jpg",
+    "imagenes/foto14.jpg",
+    "imagenes/foto15.jpg",
+    "imagenes/foto16.jpg",
+    "imagenes/foto17.jpg",
+    "imagenes/foto18.jpg",
   ];
 
   const container = document.getElementById("photo-container");
@@ -47,7 +57,7 @@ function launchFloatingPhotos() {
     setTimeout(() => {
       img.remove();
     }, 10000);
-  }, 1000);
+  }, 2000);
 }
 
 
